@@ -50,3 +50,22 @@
    50  docker rm -f $(docker ps -a -q)
    51  docker ps
    52  history
+    1  pwd
+    2  pwd
+    3  docker ps
+    4  docker inspect | grep IP
+    5  docker inspect 4b | grep IP
+    6  which mysql
+    7  yum install mysql
+    8  mysql -h 172.17.0.2 -u root -predhat
+    9  docker stop 4b
+   10  docker images |grep mysql
+   11  docker history mysql:5.7
+   12  docker volume ls
+   13  docker volume create mysql_storage
+   14  docker volume ls | grep mysql
+   15  docker volume create wp_storage
+   16  docker volume ls |grep wp
+   17  netstat -tnlp
+   18  firewall-cmd --list-all
+   19  history
