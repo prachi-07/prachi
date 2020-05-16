@@ -1,0 +1,52 @@
+    1  pwd
+    2  pwd
+    3  systemctl start docker
+    4  systemctl status docker
+    5  docker pull wordpress:5.1.1-php7.3-apache
+    6  docker pull mysql:5.7
+    7  docker pull centos
+    8  docker images |grep centos
+    9  docker run -it centos
+   10  docker run -e $x -it centos
+   11  docker run -e x=$x -it centos
+   12  x=5
+   13  docker run -e z=$x -it centos
+   14  docker run -e myname=prachi -it centos
+   15  docker rm -f $(docker ps -a -q)
+   16  docker ps -a
+   17  docker run -it mysql:5.7
+   18  docker run -it -e MYSQL_ROOT_PASSWORD=redhat  mysql:5.7
+   19  docker ps
+   20  docker rm -f $(docker ps -a -q)
+   21* 
+   22  docker run -d -it -e MYSQL_ROOT_PASSWORD=rootpass                         -e MYSQL_USER=prachi -e MYSQL_PASSWORD=redhat -e MYSQL_DATABASE=mydb mysql:5.7
+   23  docker ps
+   24  mysql -h 172.17.0.2 -u prachi -predhat
+   25  docker run -d -it -e MYSQL_ROOT_PASSWORD=rootpass                         -e MYSQL_USER=prachi -e MYSQL_PASSWORD=redhat                     -e MYSQL_DATABASE=mydb -v mysql_storage:/var/lib/mysql                              --name dbos mysql:5.7
+   26  docker ps
+   27  docker rm -f $(docker ps -a -q)
+   28  docker ps
+   29  docker run -d -it -e MYSQL_ROOT_PASSWORD=rootpass                         -e MYSQL_USER=prachi -e MYSQL_PASSWORD=redhat                     -e MYSQL_DATABASE=mydb -v mysql_storage:/var/lib/mysql                              --name dbos mysql:5.7
+   30  docker ps
+   31  docker images |grep word
+   32  docker run -dit -e WORDPRESS_DB_HOST  wordpress:5.1.1-php7.3-apache 
+   33  docker rm 2b4
+   34  docker ps
+   35  docker rm -f 2b42dba16be0
+   36  docker ps
+   37  docker run -dit -e WORDPRESS_DB_HOST=dbos                     -e WORDPRESS_DB_USER=prachi -e WORDPRESS_DB_PASSWORD=redhat                     -e WORDPRESS_DB_NAME=mydb  -v wp_storage:/var/www/html --name wpos           -p 8080:80     --link dbos      wordpress:5.1.1-php7.3-apache 
+   38  docker ps
+   39  docker logs wpos
+   40  docker run -dit -e WORDPRESS_DB_HOST=dbos                     -e WORDPRESS_DB_USER=prachi -e WORDPRESS_DB_PASSWORD=redhat                     -e WORDPRESS_DB_NAME=mydb  -v wp_storage:/var/www/html --name wpos           -p 8081:81     --link dbos      wordpress:5.1.1-php7.3-apache 
+   41  docker ps
+   42  docker rm -f c984aec3840256ea5163ace7114fc2bfd6841c3bf7b1ddd71dbb95cd6b49ac23
+   43  docker run -dit -e WORDPRESS_DB_HOST=dbos                     -e WORDPRESS_DB_USER=prachi -e WORDPRESS_DB_PASSWORD=redhat                     -e WORDPRESS_DB_NAME=mydb  -v wp_storage:/var/www/html --name wpos           -p 8081:81     --link dbos      wordpress:5.1.1-php7.3-apache 
+   44  docker ps
+   45  docker logs wpos
+   46  docker ps
+   47  docker logs wpos
+   48  docker rm -f $(docker ps -a -p)
+   49  docker ps
+   50  docker rm -f $(docker ps -a -q)
+   51  docker ps
+   52  history
