@@ -1,0 +1,43 @@
+    1  ls
+    2  cd tensorflow_project
+    3  ls
+    4  cd venv
+    5  ls
+    6  sour
+    7  source venv/bin/activate
+    8  cd ..
+    9  source venv/bin/activate
+   10  pip install --upgrade tensorflow
+   11  python -c 'import tensorflow as tf;print(tf.__version__)'
+   12  gedit test.py
+   13  notepad test.py
+   14  cat > test.py
+   15  cat test.py
+   16  python test.py
+   17  cd 
+   18  ls
+   19  ls -a
+   20  deactivate
+   21  ls
+   22  ls -a
+   23  cd tensorflow_project
+   24  mkdir tensorflow_project
+   25  cd tansorflow_project
+   26  ls
+   27  cd tensorflow_project
+   28  source venv/bin/activate
+   29  ls
+   30  cd 
+   31  ls
+   32  conda install keras
+   33  exit
+   34  ls
+   35  cd tensorflow_project
+   36  ls
+   37  source venv/bin/activate
+   38  pip install keras
+   39  pip install numpy
+   40  deactivate
+   41  ls
+   42  ed
+   43  exit
